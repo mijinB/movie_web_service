@@ -1,5 +1,15 @@
+
+import Home from "./routes/Home";
+import Detail from "./routes/Detail";
+import { Route, Routes } from "react-router-dom";
+
 function App() {
-  return null;
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/movie" element={<Detail />} />
+    </Routes>
+  );
 }
 
 export default App;
